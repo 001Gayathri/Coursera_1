@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homework 1 Updated</title>
+    <style>
+        .skip-link {
+            position: absolute;
+            top: -40px;
+            left: 0;
+            background: #000;
+            color: #fff;
+            padding: 8px;
+            z-index: 100;
+        }
+        .skip-link:focus {
+            top: 0;
+        }
+
+        /* Commented out existing li styling */
+        /*
+        li {
+            list-style-type: none;
+            padding: 10px;
+        }
+        */
+
+        nav {
+            display: inline-block;
+            width: 80%;
+        }
+
+        nav img {
+            width: 10%;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 40% 40%;
+            justify-content: space-between;
+            align-items: start;
+            row-gap: 20px;
+        }
+
+        .grid img {
+            width: 100%;
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to Main Content</a>
+
+    <nav>
+        <img src="UploadedImage0.jpg" alt="Nav Image">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Parks</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <section class="grid">
+            <div>
+                <h2>Park 1</h2>
+                <img src="UploadedImage1.jpg" alt="Park 1">
+                <p>Description of Park 1.</p>
+            </div>
+            <div>
+                <h2>Park 2</h2>
+                <img src="UploadedImage2.jpg" alt="Park 2">
+                <p>Description of Park 2.</p>
+            </div>
+        </section>
+
+        <section class="flex">
+            <div>
+                <h2>Park 3</h2>
+                <img src="UploadedImage3.jpg" alt="Park 3">
+                <p>Description of Park 3.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
